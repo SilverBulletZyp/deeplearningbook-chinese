@@ -179,7 +179,7 @@
 \begin{equation}
 (\MA\MB)^\top=\MB^\top\MA^\top.
 \end{equation}
-利用向量乘积是标量，标量转置是自身的事实，我们可以证明\eqnref{eq:2.8}：
+利用两个向量点积的结果是标量，标量转置是自身的事实，我们可以证明\eqnref{eq:2.8}：
 \begin{equation}
     \Vx^\top \Vy = \left(\Vx^\top \Vy \right)^\top = \Vy^\top \Vx.
 \end{equation}
@@ -512,7 +512,7 @@ $L^1$范数可以简化如下：
 % -- 39 --
 
 例如，整数可以分解为质因数。
-我们可以用十进制或二进制等不同方式表示整数$12$，但是$12=2\times 3\times 3$永远是对的。
+我们可以用十进制或二进制等不同方式表示整数$12$，但是$12=2\times 2\times 3$永远是对的。
 从这个表示中我们可以获得一些有用的信息，比如$12$不能被$5$整除，或者$12$的倍数可以被$3$整除。
 
 
@@ -673,7 +673,7 @@ $\MA$的非零奇异值是$\MA^\top\MA$特征值的平方根，同时也是$\MA\
 \firstgls{Moore}使我们在这类问题上取得了一定的进展。
 矩阵$\MA$的伪逆定义为：
 \begin{equation}
-    \MA^+ = \lim_{a \searrow 0} (\MA^\top\MA + \alpha \MI)^{-1} \MA^\top.
+    \MA^+ = \lim_{\alpha \searrow 0} (\MA^\top\MA + \alpha \MI)^{-1} \MA^\top.
 \end{equation}
 计算伪逆的实际算法没有基于这个定义，而是使用下面的公式：
 \begin{equation}
